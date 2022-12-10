@@ -12,6 +12,8 @@ var (
 	defaultTag  = "default"
 )
 
+// GenConfig generates a config implementation from the config type defined
+// in T.
 func GenConfig[T any]() (_ T) {
 	var cnf T
 	v := reflect.Indirect(reflect.ValueOf(&cnf))

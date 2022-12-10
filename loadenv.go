@@ -6,6 +6,9 @@ import (
 	"strings"
 )
 
+// LoadEnv loads environment variables defined in the file at path. LoadEnv
+// expects variables in the format {key}={value} and can handle values that
+// contain equal signs.
 func LoadEnv(path string) (err error) {
 	file, err := os.Open(path)
 	if err != nil {
