@@ -1,4 +1,4 @@
-package loadenv
+package loadconfig
 
 import (
 	"os"
