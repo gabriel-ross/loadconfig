@@ -14,7 +14,7 @@ var (
 
 // GenConfig generates a config implementation from the config type defined
 // in T.
-func GenConfig[T any]() (_ T) {
+func GenConfig[T any]() T {
 	var cnf T
 	v := reflect.Indirect(reflect.ValueOf(&cnf))
 	t := reflect.TypeOf(cnf)
