@@ -1,4 +1,4 @@
-module github.com/gabriel-ross/loadenv
+module github.com/gabriel-ross/loadconfig
 
 go 1.19
 
